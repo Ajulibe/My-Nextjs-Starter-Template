@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/indent */
 import styled, { createGlobalStyle, css } from "styled-components"
 
 // theme is now fully typed
@@ -7,21 +8,22 @@ export const MyComponent = styled.div`
 
 // theme is also fully typed
 export const MyGlobalStyle = createGlobalStyle`  
-@font-face {
-  font-family: 'Arial Black';
-  src: url('/assets/fonts/ariblk.ttf')  format('truetype'), /* Safari, Android, iOS */
-}
-  /* Using this inherit reset method means you can use content-box or padding-box without a universal selector overriding your CSS */
   html, body {
-    font-family: 'Helvetica Neue',Baskervville, serif, Arial, Helvetica, sans-serif;
-    background-color: ${(props) => props.theme.colors.secondary};
+    font-family: 'Didact Gothic',Raleway,Baskervville, serif, Arial, Helvetica, sans-serif;
+    background: ${(props) => props.theme.colors.background};
+    color: ${(props) => props.theme.colors.text};
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 100%;
+    font-size: 62.5%;
     -webkit-font-smoothing: subpixel-antialiased;
     text-rendering: optimizeLegibility;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
+
   @media only screen and (max-width: 858px) {
     html, body {
       font-size: 95%;
@@ -41,6 +43,4 @@ export const MyGlobalStyle = createGlobalStyle`
 `
 
 // and this theme is fully typed as well
-export const cssHelper = css`
-  border: 1px solid ${(props) => props.theme.borderRadius};
-`
+export const cssHelper = css``

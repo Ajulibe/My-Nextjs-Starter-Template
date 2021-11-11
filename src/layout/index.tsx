@@ -1,24 +1,12 @@
 import React from "react"
-// import { Spinner } from "@components/spinner" /--> not yet supported
+import { Container } from "./style"
 
 interface Props {
   children: React.ReactNode
 }
 
 const Layout: React.FC<Props> = ({ children }) => {
-  return (
-    <div>
-      {/* <Suspense
-        fallback={
-          <div>
-            <Spinner />
-          </div>
-        }
-      > */}
-      {children}
-      {/* </Suspense> */}
-    </div>
-  )
+  return <Container>{children}</Container>
 }
 
 export default Layout

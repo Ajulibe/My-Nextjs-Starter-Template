@@ -18,6 +18,8 @@
     "paths": {
       "@src/*": ["src/*"],
       "@lib/*": ["lib/*"],
+      "@hooks/*": ["hooks/*"],
+      "@types/*": ["types/*"],
       "@utils/*": ["utils/*"],
       "@styles/*": ["styles/*"],
       "@config/*": ["config/*"],

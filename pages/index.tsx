@@ -1,12 +1,9 @@
 import type { NextPage } from "next"
-import { lazy } from "react"
 import Head from "next/head"
 import Image from "next/image"
 import styles from "../styles/Home.module.css"
 import Layout from "@src/layout"
-
-//code-splitting
-const Card = lazy(() => import("@components/card"))
+import { CmpHeader } from "@src/components/UI"
 
 const Home: NextPage = () => {
   return (
@@ -18,12 +15,12 @@ const Home: NextPage = () => {
       </Head>
 
       <Layout>
+        <CmpHeader />
+
         <main className={styles.main}>
           <h1 className={styles.title}>
             Welcome to Akachukwus Next.js Template
           </h1>
-
-          <Card />
         </main>
 
         <footer className={styles.footer}>
