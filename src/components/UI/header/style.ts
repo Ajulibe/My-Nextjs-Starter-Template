@@ -1,7 +1,7 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 interface Props {
-  bgColor?: string
+  bgColor?: string;
 }
 
 export const StyledHeader = styled.div<Props>`
@@ -14,4 +14,4 @@ export const StyledHeader = styled.div<Props>`
   font-size: 24px;
   color: white;
   padding: 0 40px 0 40px;
-`
+`;

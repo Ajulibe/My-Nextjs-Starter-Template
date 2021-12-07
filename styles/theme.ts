@@ -1,4 +1,4 @@
-import { DefaultTheme } from "styled-components"
+import { DefaultTheme } from "styled-components";
 
 const myLightTheme: DefaultTheme = {
   borderRadius: "5px",
@@ -6,21 +6,21 @@ const myLightTheme: DefaultTheme = {
     main: "cyan",
     secondary: "magenta",
     background: "white",
-    text: "black",
-  },
-}
+    text: "black"
+  }
+};
 const myDarkTheme: DefaultTheme = {
   borderRadius: "5px",
   colors: {
     main: "cyan",
     secondary: "magenta",
     background: "black",
-    text: "white",
-  },
-}
+    text: "white"
+  }
+};
 
 const ThemeSwitcher = (colorMode: string) => {
-  return colorMode === "light" ? myLightTheme : myDarkTheme
-}
+  return colorMode === "light" ? myLightTheme : myDarkTheme;
+};
 
-export { ThemeSwitcher }
+export { ThemeSwitcher };

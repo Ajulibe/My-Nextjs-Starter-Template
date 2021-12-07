@@ -1,7 +1,7 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 interface Props {
-  bgColor?: string
+  bgColor?: string;
 }
 
-export const StyledCard = styled.button<Props>``
+export const StyledCard = styled.button<Props>``;

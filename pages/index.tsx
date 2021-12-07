@@ -1,9 +1,9 @@
-import type { NextPage } from "next"
-import Head from "next/head"
-import Image from "next/image"
-import styles from "../styles/Home.module.css"
-import Layout from "@src/layout"
-import { CmpHeader } from "@src/components/UI"
+import type { NextPage } from "next";
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
+import Layout from "@src/layout";
+import { CmpHeader } from "@src/components/UI";
 
 const Home: NextPage = () => {
   return (
@@ -18,9 +18,7 @@ const Home: NextPage = () => {
         <CmpHeader />
 
         <main className={styles.main}>
-          <h1 className={styles.title}>
-            Welcome to Akachukwus Next.js Template
-          </h1>
+          <h1 className={styles.title}>Welcome to Akachukwus Next.js Template</h1>
         </main>
 
         <footer className={styles.footer}>
@@ -31,18 +29,13 @@ const Home: NextPage = () => {
           >
             Created by <h1>Akachukwu</h1> and Powered by{" "}
             <span className={styles.logo}>
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                width={72}
-                height={16}
-              />
+              <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
             </span>
           </a>
         </footer>
       </Layout>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

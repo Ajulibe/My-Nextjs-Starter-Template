@@ -1,8 +1,8 @@
-import React from "react"
-import { StyledHeader } from "./style"
+import React from "react";
+import { StyledHeader } from "./style";
 
 interface Props {
-  children?: React.ReactNode
+  children?: React.ReactNode;
 }
 
 const Header: React.FC<Props> = () => {
@@ -13,7 +13,7 @@ const Header: React.FC<Props> = () => {
       <span>Blog</span>
       <span>Blog</span>
     </StyledHeader>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

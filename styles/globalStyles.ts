@@ -1,10 +1,10 @@
 /* eslint-disable @typescript-eslint/indent */
-import styled, { createGlobalStyle, css } from "styled-components"
+import styled, { createGlobalStyle, css } from "styled-components";
 
 // theme is now fully typed
 export const MyComponent = styled.div`
   color: ${(props) => props.theme.colors.main};
-`
+`;
 
 // theme is also fully typed
 export const MyGlobalStyle = createGlobalStyle`  
@@ -40,7 +40,7 @@ export const MyGlobalStyle = createGlobalStyle`
   * , *:before, *:after {
     box-sizing: inherit;
   }
-`
+`;
 
 // and this theme is fully typed as well
-export const cssHelper = css``
+export const cssHelper = css``;

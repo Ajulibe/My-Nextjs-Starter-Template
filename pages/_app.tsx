@@ -1,11 +1,11 @@
-import "../styles/globals.css"
-import type { AppProps } from "next/app"
-import { MyGlobalStyle } from "@styles/globalStyles"
-import { ThemeProvider } from "styled-components"
-import { useColorScheme } from "@hooks/useColorScheme"
+import "../styles/globals.css";
+import type { AppProps } from "next/app";
+import { MyGlobalStyle } from "@styles/globalStyles";
+import { ThemeProvider } from "styled-components";
+import { useColorScheme } from "@hooks/useColorScheme";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const { theme, themeToggler } = useColorScheme()
+  const { theme, themeToggler } = useColorScheme();
 
   return (
     <>
@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Component {...pageProps} />
       </ThemeProvider>
     </>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;
